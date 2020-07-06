@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form Project</title>
+    </head>
+
+    <body>
+        <h1 id="title"></h1>
+        <p id="description"></p>
+        <form id="survey-form" action="/form-data">
+            <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="First and Last Name" required>
+            <label id="email-label" for="email">E-mail Address</label>
+                <input id="email" type="email" name="email" placeholder="Email Address" required>
+            <label id="number-label" for="number">Age (optional)</label>
+                <input type="number" name="number" id="number" min="18" max="65" placeholder="Age">
+            <label for="drivers">Driver Brand</label>
+                <select name="drivers" id="dropdown">
+                    <option value="callaway">Callaway</option>
+                    <option value="cobra">Cobra</option>
+                    <option value="pxg">PXG</option>
+                    <option value="taylormade">TaylorMade</option>
+                    <option value="titleist">Titleist</option>                   
+                </select>
+            <label for="rounds">Rounds played per year
+                <input type="radio" id="rounds" name="rounds" value="0-5">0-5
+                <input type="radio" id="rounds" name="rounds" value="5-10">5-10
+                <input type="radio" id="rounds" name="rounds" value="10-20">10-20
+                <input type="radio" id="rounds" name="rounds" value="20+">20+
+            </label>
+            <label for="handicap">Rate your level of play
+                <input type="checkbox" id="handicap" name="handicap" value="scratch">Scratch
+                <input type="checkbox" id="handicap" name="handicap" value="i get around"> I get around
+                <input type="checkbox" id="handicap" name="handicap" value="trash">Trash golf
+            </label>
+            <label for="comments">Additional comments or suggestions</label>
+                <textarea id="comments" name="comments"></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
