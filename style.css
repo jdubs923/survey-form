@@ -1,0 +1,32 @@
+.container {
+    margin: 50px auto 0 auto;
+    max-width: 700px;
+}
+
+header {
+    text-align: center;
+}
+
+#title {
+    margin-bottom: 0;
+}
+
+#description {
+    margin-top: 5px;
+}
+
+#survey-form {
+    border: solid 2px black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 35px 35px 35px;
+}
+
+label {
+    padding: 20px 0 5px 0;
+}
+
+button {
+    margin-top: 20px;
+}
